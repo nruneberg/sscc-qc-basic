@@ -1,0 +1,9 @@
+site_name: SSCC QC Basics
+nav:
+  - Home: index.md
+  - Preparations: preparations/README.md
+  - Tutorial 1: tutorial1/README.md
+  - Tutorial 2: tutorial2/README.md
+theme:
+  name: material
+
