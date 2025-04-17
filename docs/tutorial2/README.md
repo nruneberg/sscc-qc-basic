@@ -1,6 +1,6 @@
 # Tutorial 2: Find the most stable structure of given isomers
 
-* Spring School on Computational Chemistry 17-19 April 2024
+* Spring School on Computational Chemistry 23-25 April 2025
 * Nino Runeberg, CSC - IT center for Science Ltd, based on the earlier work of Atte Sillanpää
 
 ## Overview

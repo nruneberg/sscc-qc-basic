@@ -5,6 +5,17 @@
 
 The free TmoleX Client version can be used from your local Windows, Linux, or MacOS desktop to run TURBOMOLE at CSC. It can be freely downloaded (requires registration) from the [Dassault Systèmes website](https://discover.3ds.com/free-download-biovia-turbomole-demo-version). This is a demo version that also includes a restricted version of TURBOMOLE.
 
+<div style="display: flex; gap: 20px; justify-content: space-between;">
+  <figure style="width: 45%; text-align: center;">
+    <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX network scheme" title="Using TmoleX network scheme" style="width: 100%;">
+    <figcaption>Using TmoleX via browser</figcaption>
+  </figure>
+  <figure style="width: 45%; text-align: center;">
+    <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX network scheme" title="Using TmoleX network scheme" style="width: 100%;">
+    <figcaption>Using TmoleX from local computer</figcaption>
+  </figure>
+</div>
+             
 
 ## Usage
 
@@ -14,7 +25,13 @@ Go to [puhti.csc.fi](https://puhti.csc.fi/) using a web browser and login using
 your CSC/Haka user account.
 
 1. From there [launch a Desktop](https://docs.csc.fi/computing/webinterface/desktop/#launching).
+<<<<<<< HEAD
 ![Launch Desktop](../img/ood_01.png)		
+=======
+![Launch Desktop](../img/ood_01.png)
+![Launch Desktop](../img/ood_02.png)
+		
+>>>>>>> d7ec63a (Update site and fix broken files)
    * Activate the `Reservation-> sscc_thu_small` that gives access to resourses specially dedicated for this course 
    * Select the project `project_2013760(SSCC2025)` that is used for this course 
    * Go with the default resourses	
@@ -33,10 +50,18 @@ your CSC/Haka user account.
 
 Smaller jobs can be run directly (`Run (local)`), but for larger jobs we should reserve  
 resourses via the queuing system. 
+<<<<<<< HEAD
 
 1. In `Extras->Remote Systems->Add new Machine`
 2. The Machine is called `puhti-login12.bullx`
 3. User is your CSC username, Group name and Identification are just tags you can seti however you like
+=======
+![ Prepare batch queue](../img/tmolex_7.png)
+
+1. In `Extras->Remote Systems->Add new Machine`
+2. The Machine is called `puhti-login12.bullx`
+3. `User` is your CSC username, `Group name` and `Identification` are just tags you can set to distinguish different configurations
+>>>>>>> d7ec63a (Update site and fix broken files)
 4. Tick `Expert settings`and `no password`.
 5. Work directory is a place where temporary files are stored:
    /scratch/project_2013760/<your-username>/TM_TMPDIR 
