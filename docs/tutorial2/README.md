@@ -17,7 +17,7 @@
 ## Open TmoleX and create a new Project
 
 1. Launch TmoleX and create a new project in a suitable directory.  
-  * If you use the Puhti desktop then use something like  `/scratch/project_2006657/<your-username>/qc_tutorial2`. Remember to 
+  * If you use the Puhti desktop then use something like  `/scratch/project_2013760/<your-username>/qc_tutorial2`. Remember to 
 replace  `your-username` with your actual username in order to make it a unique and not interfering with other participants projects.
   * If you use a locally installed TmoleX then define the new project under your home directory, e.g. `~/qc_tutorial2` .
 1. A new job is initiated within your new TmoleX project. 
@@ -35,14 +35,11 @@ replace  `your-username` with your actual username in order to make it a unique 
 
 ## Examine how long it took to run the job
 
-When a job has finished, all output files are transferred to your local job and deleted from Puhti's work directory.
+When a job has finished, all output files are transferred to your project folder and deleted from Puhti's work directory.
 Amoung the result files yous should have a file called `slurm-XXXXXXXXXX.out` where `XXXXXXXXXX`is replaced with a 
 number that corresponds to the `JOBID` the job had in Puhti's queuing system.
-If you would like to have a closer look at the details of that job you should login to Puhti
-```bash
-ssh  your-username@puhti.csc.fi
-```
-Once logged into Puhti you can use the command `sacct` to collect various data related to the job. Give the command (replace JOBID with the actual number)
+If you would like to have a closer look at the details of that job you should open a Terminal on your desktop.
+In the rerminal you can use the command `sacct` to collect various data related to the job. Give the command (replace JOBID with the actual number)
 
 ```bash
 sacct -X -j JOBID -o state,start,alloc,elapsed,cputime
