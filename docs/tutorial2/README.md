@@ -7,8 +7,8 @@
 
 1. We have downloaded from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) a set of molecules having the same molecular formula C<sub>11</sub>H<sub>14</sub>O<sub>2</sub>N<sub>2</sub> . 
 1. From the original set of about 14700 molecules we have selected 31 structures.  
-   Their corresponding [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) strings are  given in the table [https://siili.rahtiapp.fi/Duf0GbqtRVGrz2dZbPi5qg](https://siili.rahtiapp.fi/Duf0GbqtRVGrz2dZbPi5qg?view) 
-1. Pick any of the free structures in that [table](https://siili.rahtiapp.fi/Duf0GbqtRVGrz2dZbPi5qg?view) and mark your name on the row (click on side-by-side icon at top left to edit ) 
+   Their corresponding [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) strings are  given in the table [https://siili.rahtiapp.fi/ymroOSSRQTKOewnIDQMrfA#](https://siili.rahtiapp.fi/ymroOSSRQTKOewnIDQMrfA?view) 
+1. Pick any of the free structures in that [table](https://siili.rahtiapp.fi/ymroOSSRQTKOewnIDQMrfA#) and mark your name on the row (click on side-by-side icon at top left to edit ) 
 1. Set up a calculation to get the minimum energy conformation according to the same recipe we used for formaldehyde
 1. Tabulate the total energy of the corresponding optimized structure
 1. Can you explain why some isomers are lower in energy than others?
