@@ -485,8 +485,8 @@
 <ol>
 <li>We have downloaded from <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a> a set of molecules having the same molecular formula C<sub>11</sub>H<sub>14</sub>O<sub>2</sub>N<sub>2</sub> . </li>
 <li>From the original set of about 14700 molecules we have selected 31 structures.<br />
-   Their corresponding <a href="https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system">SMILES</a> strings are  given in the table <a href="https://siili.rahtiapp.fi/Duf0GbqtRVGrz2dZbPi5qg?view">https://siili.rahtiapp.fi/Duf0GbqtRVGrz2dZbPi5qg</a> </li>
-<li>Pick any of the free structures in that <a href="https://siili.rahtiapp.fi/Duf0GbqtRVGrz2dZbPi5qg?view">table</a> and mark your name on the row (click on side-by-side icon at top left to edit ) </li>
+   Their corresponding <a href="https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system">SMILES</a> strings are  given in the table <a href="https://siili.rahtiapp.fi/ymroOSSRQTKOewnIDQMrfA?view">https://siili.rahtiapp.fi/ymroOSSRQTKOewnIDQMrfA#</a> </li>
+<li>Pick any of the free structures in that <a href="https://siili.rahtiapp.fi/ymroOSSRQTKOewnIDQMrfA#">table</a> and mark your name on the row (click on side-by-side icon at top left to edit ) </li>
 <li>Set up a calculation to get the minimum energy conformation according to the same recipe we used for formaldehyde</li>
 <li>Tabulate the total energy of the corresponding optimized structure</li>
 <li>Can you explain why some isomers are lower in energy than others?</li>
@@ -495,7 +495,7 @@
 <h2 id="open-tmolex-and-create-a-new-project">Open TmoleX and create a new Project</h2>
 <ol>
 <li>Launch TmoleX and create a new project in a suitable directory.  </li>
-<li>If you use the Puhti desktop then use something like  <code>/scratch/project_2006657/&lt;your-username&gt;/qc_tutorial2</code>. Remember to 
+<li>If you use the Puhti desktop then use something like  <code>/scratch/project_2013760/&lt;your-username&gt;/qc_tutorial2</code>. Remember to 
 replace  <code>your-username</code> with your actual username in order to make it a unique and not interfering with other participants projects.</li>
 <li>If you use a locally installed TmoleX then define the new project under your home directory, e.g. <code>~/qc_tutorial2</code> .</li>
 <li>A new job is initiated within your new TmoleX project. </li>
@@ -511,13 +511,11 @@ replace  <code>your-username</code> with your actual username in order to make i
 <img alt="&quot;finish&quot;" src="../img/t2_4.png" />  </li>
 </ol>
 <h2 id="examine-how-long-it-took-to-run-the-job">Examine how long it took to run the job</h2>
-<p>When a job has finished, all output files are transferred to your local job and deleted from Puhti's work directory.
+<p>When a job has finished, all output files are transferred to your project folder and deleted from Puhti's work directory.
 Amoung the result files yous should have a file called <code>slurm-XXXXXXXXXX.out</code> where <code>XXXXXXXXXX</code>is replaced with a 
 number that corresponds to the <code>JOBID</code> the job had in Puhti's queuing system.
-If you would like to have a closer look at the details of that job you should login to Puhti</p>
-<pre><code class="language-bash">ssh  your-username@puhti.csc.fi
-</code></pre>
-<p>Once logged into Puhti you can use the command <code>sacct</code> to collect various data related to the job. Give the command (replace JOBID with the actual number)</p>
+If you would like to have a closer look at the details of that job you should open a <code>Terminal</code> on your desktop.
+In the terminal you can use the command <code>sacct</code> to collect various data related to the job. Give the command (replace JOBID with the actual number)</p>
 <pre><code class="language-bash">sacct -X -j JOBID -o state,start,alloc,elapsed,cputime
      State               Start  AllocCPUS    Elapsed    CPUTime 
 ---------- ------------------- ---------- ---------- ---------- 
