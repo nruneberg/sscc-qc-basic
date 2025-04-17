@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://csc-training.github.io/sscc-qc-basic/preparations/">
+        <link rel="canonical" href="https://nruneberg.github.io/sscc-qc-basic/preparations/">
       
       
         <link rel="prev" href="..">
@@ -44,6 +44,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -153,7 +155,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/csc-training/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/nruneberg/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -198,7 +200,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/csc-training/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/nruneberg/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -309,9 +311,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-your-own-tmolex" class="md-nav__link">
+  <a href="#prepare-for-batch-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Install your own TmoleX
+      Prepare for batch jobs
     </span>
   </a>
   
@@ -420,9 +422,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-your-own-tmolex" class="md-nav__link">
+  <a href="#prepare-for-batch-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Install your own TmoleX
+      Prepare for batch jobs
     </span>
   </a>
   
@@ -455,26 +457,117 @@
 <h1 id="setup-tmolex">Setup TmoleX</h1>
 <p><a href="https://www.3ds.com/products/biovia/turbomole">TmoleX</a> is an easy to use graphical user interface to handle <a href="https://www.turbomole.org/turbomole/turbomole-features/">TURBOMOLE</a> calculations. TmoleX includes a structure builder and tools for preparing TURBOMOLE jobs and analyzing results. TmoleX can also be used to submit and supervise TURBOMOLE jobs on CSC's supercomputers.</p>
 <p>The free TmoleX Client version can be used from your local Windows, Linux, or MacOS desktop to run TURBOMOLE at CSC. It can be freely downloaded (requires registration) from the <a href="https://discover.3ds.com/free-download-biovia-turbomole-demo-version">Dassault Systèmes website</a>. This is a demo version that also includes a restricted version of TURBOMOLE.</p>
+<div style="display: flex; gap: 20px; justify-content: space-between;">
+  <figure style="width: 45%; text-align: center;">
+    <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX network scheme" title="Using TmoleX network scheme" style="width: 100%;">
+    <figcaption>Using TmoleX via browser</figcaption>
+  </figure>
+  <figure style="width: 45%; text-align: center;">
+    <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX network scheme" title="Using TmoleX network scheme" style="width: 100%;">
+    <figcaption>Using TmoleX from local computer</figcaption>
+  </figure>
+</div>
+
 <h2 id="usage">Usage</h2>
 <h3 id="use-via-your-browser">Use via your browser</h3>
 <p>Go to <a href="https://puhti.csc.fi/">puhti.csc.fi</a> using a web browser and login using
-your CSC/Haka user account.
-![Slurm settings]
-1. From there <a href="https://docs.csc.fi/computing/webinterface/desktop/#launching">launch a Desktop</a>.
+your CSC/Haka user account.</p>
+<ol>
+<li>From there <a href="https://docs.csc.fi/computing/webinterface/desktop/#launching">launch a Desktop</a>.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 <img alt="Launch Desktop" src="../img/ood_01.png" />      <br />
-<img alt="Launch Desktop" src="../img/ood_02.png" />
+=======
+<img alt="Launch Desktop" src="../img/ood_01.png" />
+<img alt="Launch Desktop" src="../img/ood_02.png" /></li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>d7ec63a (Update site and fix broken files)
    * Activate the <code>Reservation-&gt; sscc_thu_small</code> that gives access to resourses specially dedicated for this course 
-   * Select the project <code>project_2006657(CompChem Training)</code> that is used for this course 
+   * Select the project <code>project_2013760(SSCC2025)</code> that is used for this course 
    * Go with the default resourses<br />
    * Once resourses have been allocated <code>Launch Desktop</code><br />
 2. Open a <code>Terminal</code> and load the TURBOMOLE module <code>module load turbomole/7.8</code>.
 3. Start TmoleX with the command <code>TmoleX24</code>.
 4. Select <code>New Project</code> and define a suitable project in the <code>File Name</code> slot
-   (e.g. <code>/scratch/project_2006657/&lt;your-username&gt;/qc_tutorial1</code>).
+   (e.g. <code>/scratch/project_2013760/&lt;your-username&gt;/qc_tutorial1</code>).
+   In the menu <code>Extras-&gt;Preferences-&gt;General</code> you can set the <code>User directory</code> to point to you present directory <code>/scratch/project_2013760/&lt;your-username&gt;</code>
 5. Define your system and type of calculation. 
 6. Small jobs can be run interactively: Start Job -&gt; Run (local)
 7. Larger jobs should be run as batch jobs: Start Job -&gt; Run (network).</p>
-<p>Example settings are given below.  Remember to save the settings using <code>Save Machine</code>.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="prepare-for-batch-jobs">Prepare for batch jobs</h3>
+<p>Smaller jobs can be run directly (<code>Run (local)</code>), but for larger jobs we should reserve<br />
+resourses via the queuing system. 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
+<li>In <code>Extras-&gt;Remote Systems-&gt;Add new Machine</code></li>
+<li>The Machine is called <code>puhti-login12.bullx</code></li>
+<li>
+<h1 id="user-is-your-csc-username-group-name-and-identification-are-just-tags-you-can-seti-however-you-like">User is your CSC username, Group name and Identification are just tags you can seti however you like</h1>
+<p><img alt=" Prepare batch queue" src="../img/tmolex_7.png" /></p>
+</li>
+<li>
+<p>In <code>Extras-&gt;Remote Systems-&gt;Add new Machine</code></p>
+</li>
+<li>The Machine is called <code>puhti-login12.bullx</code></li>
+<li><code>User</code> is your CSC username, <code>Group name</code> and <code>Identification</code> are just tags you can set to distinguish different configurations<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>d7ec63a (Update site and fix broken files)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li>Tick <code>Expert settings</code>and <code>no password</code>.</li>
+<li>Work directory is a place where temporary files are stored:
+   /scratch/project_2013760/<your-username>/TM_TMPDIR </li>
+<li>
+<p>TURBOMOLE directory should point to were it is installed:
+   /appl/soft/chem/turbomole/7.8/TURBOMOLE</p>
+</li>
+<li>
+<p>Tick <code>Use queuing system</code></p>
+</li>
+<li>Submit with <code>sbatch</code> and Check status with  <code>squeue -u $USER</code></li>
+<li>Untick <code>add PARA_ARCH</code> and <code>add PARNODES</code>    </li>
+<li>In the field "Script before job execution" add:</li>
+</ol>
+<pre><code class="language-bash">#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
+#SBATCH --partition=small                             # queue
+#SBATCH --nodes=1                                     # for SMP only 1 is possible
+#SBATCH --cpus-per-task=4                             # SMP threads
+#SBATCH --account=project_2013760                     # insert here the project to be billed
+#SBATCH --time=00:30:00                               # time as `hh:mm:ss`
+source /appl/profile/zz-csc-env.sh
+ulimit -s unlimited
+export PARA_ARCH=SMP                                  # use SMP threads
+module load turbomole/7.8
+export PARNODES=$SLURM_CPUS_PER_TASK                  # for SMP
+export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
+</code></pre>
+<ol>
+<li><strong>Remember to save save the settings using <code>Save Machine</code>.</strong>   </li>
+</ol>
 <h3 id="install-your-own-tmolex">Install your own TmoleX</h3>
 <p>Install the TmoleX client on your local workstation. For details, see the
 registration and download page at
@@ -483,24 +576,6 @@ With your version of TmoleX you can build your actual job locally and then
 submit the job to Puhti. With the client you can monitor how the job proceeds.
 When the job has completed you can retrieve the output and use your local
 client to analyze the results.</p>
-<p>Below are some example queue settings that can be used in TmoleX:</p>
-<p><img alt="SLURM settings" src="../img/local_9.png" /></p>
-<p>Where the complete script to be inserted in the field "Script before job
-execution" contains something like (modify according to your actual needs):</p>
-<pre><code class="language-bash">#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
-#SBATCH --partition=small                             # queue
-#SBATCH --nodes=1                                     # for SMP only 1 is possible
-#SBATCH --cpus-per-task=4                             # SMP threads
-#SBATCH --account=project_2006657                     # insert here the project to be billed     
-#SBATCH --time=00:30:00                               # time as `hh:mm:ss`
-source /appl/profile/zz-csc-env.sh
-ulimit -s unlimited
-export PARA_ARCH=SMP                                  # use SMP threads
-module load turbomole/7.8   
-export PARNODES=$SLURM_CPUS_PER_TASK                  # for SMP
-export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
-</code></pre>
-<p>Remember to save the settings using <code>Save Machine</code>. </p>
 
 
 

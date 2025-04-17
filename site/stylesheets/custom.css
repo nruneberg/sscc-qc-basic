@@ -1,0 +1,21 @@
+/* Make left sidebar narrower */
+.md-sidebar--primary {
+  width: 140px;
+}
+
+/* Make right TOC sidebar narrower */
+.md-sidebar--secondary {
+  width: 200px;
+}
+
+/* Shift main content to fill the space */
+.md-main__inner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Optional: prevent content from being too narrow on large screens */
+.md-content {
+  max-width: 1000px;
+}
+

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://csc-training.github.io/sscc-qc-basic/tutorial1/">
+        <link rel="canonical" href="https://nruneberg.github.io/sscc-qc-basic/tutorial1/">
       
       
         <link rel="prev" href="../preparations/">
@@ -44,6 +44,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -153,7 +155,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/csc-training/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/nruneberg/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -198,7 +200,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/csc-training/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/nruneberg/sscc-qc-basic" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -321,9 +323,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#remote-usage-setup-at-csc" class="md-nav__link">
+  <a href="#tmolex-setup-at-csc" class="md-nav__link">
     <span class="md-ellipsis">
-      Remote usage setup at CSC
+      TmoleX setup at CSC
     </span>
   </a>
   
@@ -336,16 +338,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-launch-tmolex-and-create-a-new-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Launch TmoleX and create a new project
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Task 1: Launch TmoleX and create a new project">
+    <nav class="md-nav" aria-label="Task 1: Optimize the ground state for formaldehyde">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -366,98 +359,98 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#define-your-first-turbomole-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define your first turbomole job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometry-build-formaldehyde" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometry -- Build formaldehyde
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atomic-attributes-select-basis-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atomic Attributes: Select basis set
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecular-attributes-generate-initial-guess-mos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Molecular Attributes -- Generate initial guess MOs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-define-your-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method -- Define your method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-job-define-your-job-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Job -- Define your job type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runnetwork-setup-remote-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run(network) -- Setup remote job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results -- structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results -- Gradients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vibrational-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vibrational spectrum
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-define-your-first-turbomole-job" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Define your first turbomole job
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-geometry-build-formaldehyde" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Geometry -- Build formaldehyde
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-atomic-attributes-select-basis-set" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Atomic Attributes: Select basis set
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-molecular-attributes-generate-initial-guess-mos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Molecular Attributes -- Generate initial guess MOs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-method-define-your-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Method -- Define your method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-start-job-define-your-job-type" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Start Job -- Define your job type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-runnetwork-setup-remote-job" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Run(network) -- Setup remote job
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-results-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Results -- structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-results-gradients" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Results -- Gradients
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-vibrational-spectrum" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Vibrational spectrum
-    </span>
-  </a>
   
 </li>
       
@@ -527,9 +520,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#remote-usage-setup-at-csc" class="md-nav__link">
+  <a href="#tmolex-setup-at-csc" class="md-nav__link">
     <span class="md-ellipsis">
-      Remote usage setup at CSC
+      TmoleX setup at CSC
     </span>
   </a>
   
@@ -542,16 +535,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-launch-tmolex-and-create-a-new-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Launch TmoleX and create a new project
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Task 1: Launch TmoleX and create a new project">
+    <nav class="md-nav" aria-label="Task 1: Optimize the ground state for formaldehyde">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -572,98 +556,98 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#define-your-first-turbomole-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define your first turbomole job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometry-build-formaldehyde" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometry -- Build formaldehyde
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atomic-attributes-select-basis-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atomic Attributes: Select basis set
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecular-attributes-generate-initial-guess-mos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Molecular Attributes -- Generate initial guess MOs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-define-your-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method -- Define your method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-job-define-your-job-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Job -- Define your job type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runnetwork-setup-remote-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run(network) -- Setup remote job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results -- structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-gradients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results -- Gradients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vibrational-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vibrational spectrum
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-define-your-first-turbomole-job" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Define your first turbomole job
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-geometry-build-formaldehyde" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Geometry -- Build formaldehyde
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-atomic-attributes-select-basis-set" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Atomic Attributes: Select basis set
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-molecular-attributes-generate-initial-guess-mos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Molecular Attributes -- Generate initial guess MOs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-method-define-your-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Method -- Define your method
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-start-job-define-your-job-type" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Start Job -- Define your job type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-runnetwork-setup-remote-job" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Run(network) -- Setup remote job
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-results-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Results -- structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-results-gradients" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Results -- Gradients
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-vibrational-spectrum" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Vibrational spectrum
-    </span>
-  </a>
   
 </li>
       
@@ -688,7 +672,7 @@
 
 <h1 id="tutorial-1-basic-dft-calculations-using-tmolex-and-turbomole">Tutorial 1: Basic DFT calculations using TmoleX and TURBOMOLE</h1>
 <ul>
-<li>Spring School on Computational Chemistry 17-19 April 2024</li>
+<li>Spring School on Computational Chemistry 23-25 April 2025</li>
 <li>Nino Runeberg, CSC - IT center for Science Ltd, based on the earlier work of Atte Sillanpää</li>
 </ul>
 <h2 id="overview">Overview</h2>
@@ -700,21 +684,31 @@
 <li>Perform a subsequent frequency calculation on the optimized structure</li>
 <li>Visualize results</li>
 </ol>
-<h2 id="remote-usage-setup-at-csc">Remote usage setup at CSC</h2>
+<h2 id="tmolex-setup-at-csc">TmoleX setup at CSC</h2>
 <ul>
 <li>TmoleX can be used either via a browser or by running it on your local 
   computer (see <a href="../preparations/">Preparations</a> )   </li>
 <li>The model system and input parameters for the TUBOMOLE job are specified  using TmoleX</li>
-<li>A connection to supercomputer puhti.csc.fi is set up in TmoleX using ssh. (The password is cleared upon closing the software)</li>
+<li>A connection to puhti.csc.fi is set up in TmoleX using ssh (Only passwordless ssh allowed)</li>
 <li>Installation directory and supercomputer specific options are set in TmoleX so that the GUI can
   launch the job for the queueing system (SLURM) on the Puhti</li>
-<li>TmoleX can follow the progress and once the job has completed, dowload the results to the local computer</li>
-<li>The CSC TmoleX page has more information.</li>
+<li>TmoleX can follow the progress and once the job has completed, the results are retreived</li>
+<li>The <a href="https://docs.csc.fi/apps/tmolex/">CSC TmoleX page</a> has more information </li>
 <li>The overall CSC supercomputer environment can be found in the <a href="https://docs.csc.fi/computing/available-systems/">Docs CSC user guide</a>
   or in the <a href="https://csc-training.github.io/csc-env-eff/">CSC Computing environment self learning course materials</a>.</li>
-<li>Aniother option is to use <code>ssh</code> and login directly on the Puhti login node, and prepare the job with <code>define</code>.
-<img alt="&quot;Using TmoleX network scheme&quot;" src="../img/tmolex-and-puhti.svg" title="Using TmoleX network scheme" /></li>
+<li>TURBOMOLE can also be used directly from the Puhti command line.</li>
 </ul>
+<div style="display: flex; gap: 20px; justify-content: space-between; align-items: flex-end;">
+  <figure style="width: 45%; text-align: center; margin: 0;">
+    <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX via OOD" title="Using TmoleX via browser" style="width: 100%;">
+    <figcaption>Using TmoleX via the browser</figcaption>
+  </figure>
+  <figure style="width: 45%; text-align: center; margin: 0;">
+    <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX locally" title="Using TmoleX locally over the network" style="width: 100%;">
+    <figcaption>Using TmoleX from local pc</figcaption>
+  </figure>
+</div>
+
 <h2 id="task-1-optimize-the-ground-state-for-formaldehyde">Task 1: Optimize the ground state for formaldehyde</h2>
 <p>We need an initial guess for the geometry specifying the 3N-6 internal
 nuclear coordinates. This initial structure place the system on the
@@ -722,8 +716,9 @@ energy surface that is uniquely defined by the computational model
 we are going to use (B-O approx.).  The performance of the model
 often vary at different parts of the surface.</p>
 <p><img alt="&quot;Potential energy surface&quot;" src="../img/pesurf.png" title="potential energy surface" /></p>
-<h2 id="task-1-launch-tmolex-and-create-a-new-project">Task 1: Launch TmoleX and create a new project</h2>
-<h3 id="use-via-your-browser">Use via your browser</h3>
+<h3><span data-toc-label="New project">Launch TmoleX and create a new project</span></h3>
+
+<h4 id="use-via-your-browser">Use via your browser</h4>
 <p>Go to <a href="https://puhti.csc.fi/">puhti.csc.fi</a> using a web browser and login using
 your CSC/Haka user account.</p>
 <ol>
@@ -732,7 +727,7 @@ your CSC/Haka user account.</p>
 <li>Start TmoleX with the command <code>TmoleX24</code>.
 <img alt="&quot;Launch Tmolex24&quot;" src="../img/ood_03.png" /></li>
 <li>Select <code>New Project</code> and define a suitable project in the <code>File Name</code> slot
-   (e.g. <code>/scratch/project_2006657/&lt;your-username&gt;/qc_tutorial1</code>).
+   (e.g. <code>/scratch/project_2013760/&lt;your-username&gt;/qc_tutorial1</code>).
 <img alt="&quot;Tmolex24 new project&quot;" src="../img/ood_04.png" /></li>
 <li>Define your system and type of calculation. </li>
 <li>Small jobs can be run interactively: Start Job -&gt; Run (local)</li>
@@ -740,7 +735,7 @@ your CSC/Haka user account.</p>
    settings are given below. Note that passwordless connection doesn't work via
    the browser. Remember to save the settings using <code>Save Machine</code>.</li>
 </ol>
-<h3 id="use-locally-installed-tmolex">Use locally installed TmoleX</h3>
+<h4 id="use-locally-installed-tmolex">Use locally installed TmoleX</h4>
 <ul>
 <li>If you have installed TmoleX on your own laptop, launch it from icon/menu</li>
 <li>On the CSC workstations TmoleX is already installed, launch it from icon/menu</li>
@@ -749,7 +744,7 @@ on Puhti for the calculations. Accept the dialog.</li>
 <li>Define a suitable project directory (e.g. <code>~/qc_tutorial1</code>).</li>
 </ul>
 <p><img alt="&quot;Launch TmoleX GUI&quot;" src="../img/local_1.png" /></p>
-<h2 id="task-1-define-your-first-turbomole-job">Task 1: Define your first turbomole job</h2>
+<h3 id="define-your-first-turbomole-job">Define your first turbomole job</h3>
 <p><img alt="&quot;TmoleX steps&quot;" src="../img/local_2.png" /></p>
 <p>A complete Turbomole job comprises the sequence:</p>
 <ul>
@@ -760,80 +755,84 @@ on Puhti for the calculations. Accept the dialog.</li>
 <a href="https://www.turbomole.org/wp-content/uploads/2019/10/Tutorial_7-4.pdf">taken from a TURBOMOLE tutorial</a>
 highlights the most typical ones and their relation.</p>
 <p><img alt="&quot;TURBOMOLE modules&quot;" src="../img/tmoleDefineFlow.png" title="TURBOMOLE modules" /></p>
-<h2 id="task-1-geometry-build-formaldehyde">Task 1: Geometry -- Build formaldehyde</h2>
+<h3 id="geometry-build-formaldehyde">Geometry -- Build formaldehyde</h3>
 <p>Open the 3D builder, right-click on canvas and load formaldehyde from the library
 <img alt="&quot;update&quot;" src="../img/local_3.png" /></p>
 <p>Close the builder and continue to Atomic Attributes</p>
-<h2 id="task-1-atomic-attributes-select-basis-set">Task 1: Atomic Attributes: Select basis set</h2>
+<h3 id="atomic-attributes-select-basis-set">Atomic Attributes: Select basis set</h3>
 <p>Select the default def-SV(P) basis set</p>
 <p><img alt="&quot;update&quot;" src="../img/local_4.png" /> </p>
 <p>Continue to Molecular Attributes</p>
-<h2 id="task-1-molecular-attributes-generate-initial-guess-mos">Task 1: Molecular Attributes -- Generate initial guess MOs</h2>
+<h3 id="molecular-attributes-generate-initial-guess-mos">Molecular Attributes -- Generate initial guess MOs</h3>
 <p>Generate initial MOs by doing an extended Hückel calculation</p>
 <p><img alt="&quot;update&quot;" src="../img/local_5.png" /></p>
 <p>Continue to Method</p>
-<h2 id="task-1-method-define-your-method">Task 1: Method -- Define your method</h2>
+<h3 id="method-define-your-method">Method -- Define your method</h3>
 <p>Select the default method (ri-dft BP86/m3)</p>
 <p><img alt="&quot;update&quot;" src="../img/local_6.png" /></p>
 <p>Continue to Start Job</p>
-<h2 id="task-1-start-job-define-your-job-type">Task 1: Start Job -- Define your job type</h2>
+<h3 id="start-job-define-your-job-type">Start Job -- Define your job type</h3>
 <p>We want to do a geometry optimization of the ground state.</p>
 <p><img alt="&quot;update&quot;" src="../img/local_7.png" /></p>
-<p>Continue to run (network)</p>
-<h2 id="task-1-runnetwork-setup-remote-job">Task 1: Run(network) -- Setup remote job</h2>
+<p>Smaller jobs can be run directly, <code>Run (local)</code>, but for larger jobs we should reserve
+resourses via the queuing system.  Continue to <code>Run (network)</code></p>
+<h3 id="runnetwork-setup-remote-job">Run(network) -- Setup remote job</h3>
 <p>Click <strong>Save</strong> as the first dialog prompts for the folder to use for the job files.
-<img alt="&quot;update&quot;" src="../img/local_8.png" />
-In the new dialog, we define the remote (supercomputer) configuration:
-   * Which user account and project to use
-   * Where TURBOMOLE is installed
-   * etc.
-   * Note, this will differ for every user and machine
-   * General instructions for Puhti <a href="https://docs.csc.fi/apps/tmolex/">docs.csc.fi/apps/tmolex/</a>
-   * <strong>important</strong> Replace <code>your-username</code> with your actual username on CSC supercomputer! Also in the <em>Work directory</em>  field.</p>
+<img alt="&quot;update&quot;" src="../img/local_8.png" /></p>
+<p>In the new dialog, we define the remote (Puhti) configuration:</p>
+<ul>
+<li>Which user account and project to use</li>
+<li>Where TURBOMOLE is installed etc.</li>
+<li>What type of resources we want to use for this job</li>
+</ul>
 <p>TURBOMOLE can be run in parallel either via a shared memory approach (SMP, only within a single node) or 
 by using MPI parallelization (possible to run a job over several nodes). In this tutorial we will use the SMP version.</p>
-<p><img alt="&quot;update&quot;" src="../img/local_9.png" /></p>
-<p>Use these:</p>
-<ul>
-<li>Machine/IP: <code>puhti.csc.fi</code></li>
-<li>User: <code>&lt;your-username&gt;</code></li>
-<li>Work directory: <code>/scratch/project_2006657/&lt;your-username&gt;</code></li>
-<li>TURBOMOLE directory: <code>/appl/soft/chem/turbomole/7.8/TURBOMOLE</code></li>
-<li>Use queuing system (tick)</li>
-<li>Submit with: <code>sbatch</code></li>
-<li>Check status: <code>squeue -u $USER</code></li>
+<p>Smaller jobs can be run directly (<code>Run (local)</code>), but for larger jobs we should reserve<br />
+resourses via the queuing system. 
+<img alt=" Prepare batch queue" src="../img/tmolex_7.png" /></p>
+<ol>
+<li>The Machine is called <code>puhti-login12.bullx</code></li>
+<li><code>User</code> is your CSC username, <code>Group name</code> and <code>Identification</code> are just tags you can set to distinguish different configurations</li>
+<li>Tick <code>Expert settings</code>and <code>no password</code>.<ul>
+<li>Check that the access works by clicking <code>Check Password Settings</code> </li>
 </ul>
-<p>Script before job execution:</p>
+</li>
+<li>Work directory is a place where temporary files are stored:
+   <code>/scratch/project_2013760/&lt;your-username&gt;/TM_TMPDIR</code> </li>
+<li>TURBOMOLE directory should point to were it's installed:
+   <code>/appl/soft/chem/turbomole/7.8/TURBOMOLE</code></li>
+<li>Tick <code>Use queuing system</code></li>
+<li>Submit with <code>sbatch</code> and Check status with  <code>squeue -u $USER</code></li>
+<li>Untick <code>add PARA_ARCH</code> and <code>add PARNODES</code>    </li>
+<li>In the field "Script before job execution" add:</li>
+</ol>
 <pre><code class="language-bash">#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
 #SBATCH --partition=small                             # queue
 #SBATCH --nodes=1                                     # for SMP only 1 is possible
 #SBATCH --cpus-per-task=4                             # SMP threads
-#SBATCH --account=project_2006657                     # insert here the project to be billed     
+#SBATCH --account=project_2013760                     # insert here the project to be billed
 #SBATCH --time=00:30:00                               # time as `hh:mm:ss`
 source /appl/profile/zz-csc-env.sh
 ulimit -s unlimited
 export PARA_ARCH=SMP                                  # use SMP threads
-module load turbomole/7.8   
+module load turbomole/7.8
 export PARNODES=$SLURM_CPUS_PER_TASK                  # for SMP
 export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
 </code></pre>
 <ul>
+<li><strong>Remember to save save the settings using <code>Save Machine</code>.</strong>   </li>
 <li>
-<p>Check that your password is recognized by clicking <code>Check Password Settings</code> </p>
-</li>
-<li>
-<p>Click <strong>save machine</strong> at the top right</p>
-</li>
-</ul>
 <p>Click <strong>Start Job</strong> at the bottom right</p>
-<ul>
-<li>For this tutorial, the default 1 minute interval to ping Puhti for the job status is ok, but for actual production jobs, that could be increased to e.g. 1 hour. The status can always be refreshed manually. This job should finish in seconds.</li>
+</li>
+<li>
+<p>For this tutorial, the default 1 minute interval to ping Puhti for the job status is ok, but for actual production jobs, that could be increased to e.g. 1 hour. The status can always be refreshed manually. This job should finish in seconds.</p>
+</li>
 </ul>
 <p><img alt="&quot;update&quot;" src="../img/local_12.png" /></p>
-<h2 id="task-1-results-structure">Task 1: Results -- structure</h2>
+<h3 id="results-structure">Results -- structure</h3>
 <p>The geometry optimization needed 5 cycles to reach the stationary point on the energy surface.</p>
 <p><img alt="&quot;Optimized geometry&quot;" src="../img/local_13.png" /></p>
-<h2 id="task-1-results-gradients">Task 1: Results -- Gradients</h2>
+<h3 id="results-gradients">Results -- Gradients</h3>
 <p>The length of the arrows show how steep the energy surface is in that direction</p>
 <p><img alt="&quot;update&quot;" src="../img/local_14.png" /></p>
 <p>At the end of the geometry optimization we have reached a stationary point
@@ -846,24 +845,21 @@ export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
 </ul>
 <p>The nature of the stationary point can be deduced from the curvature (Hessian).
 A positive curvature corresponds to a minimum, a negative to a maximum.</p>
-<h2 id="task-1-vibrational-spectrum">Task 1: Vibrational spectrum</h2>
+<h3 id="vibrational-spectrum">Vibrational spectrum</h3>
 <p>In order to verify that the stationary point is a true minimum
-(positive curvature in all directions = positive frequencies)</p>
+(positive curvature in all directions = real frequencies)</p>
 <p>Start a frequency calculation (Reuse data by just hitting "Start new job by using current data as input" )</p>
 <p><img alt="&quot;Start new job from previous results&quot;" src="../img/local_16.png" /></p>
 <p>In the "Job typ" list select "Spectra &amp; Excited States --&gt; IR &amp; vibrational frequencies"</p>
 <p>Select "Run (Network)" to launch the job.</p>
-<p>Once the job finishes (you can refresh the view - wait for results to get downloaded).
-You can also log in on the supercomputer</p>
-<pre><code class="language-bash">ssh -Y your-username@puhti.csc.fi
-</code></pre>
-<p>and follow the job status with slurm commands more on these e.g. in
-<a href="https://csc-training.github.io/csc-env-eff/hands-on/batch_resources/tutorial_sacct_and_seff.html">CSC Computing Environment self learning materials</a>
-directly, e.g. with:</p>
+<p>Once the job finishes (you can refresh the view - wait for results to be retreived).
+You can also open a separate terminal on your Desktop (or ssh from your local pc),
+and follow the job status with slurm commands directly, e.g. with:</p>
 <pre><code class="language-bash">squeue -u $USER # my current running or queuing jobs
 sacct           # my ended jobs for the last day
 sacct -X -o jobid,start,jobname,state,elapsed,alloc # last jobs with custom fields
 </code></pre>
+<p>More on these in <a href="https://csc-training.github.io/csc-env-eff/hands-on/batch_resources/tutorial_sacct_and_seff.html">CSC Computing Environment self learning materials</a></p>
 <p>A local terminal on Puhti also gives access to some additional tools and scripts
 that come with TURBOMOLE that can be nice to follow or post process the data. You
 can find these e.g.</p>
@@ -872,7 +868,7 @@ ls $TURBODIR/scripts/
 cgnce -h # to get help on usage
 actual -h 
 </code></pre>
-<p>All calculated frequencies are positive indicating that the structure corresponds to a true minimum.</p>
+<p>Once the job has finished we note that all calculated frequencies are real, indicating that the structure corresponds to a true minimum.</p>
 <p><img alt="&quot;Frequency calculation results&quot;" src="../img/local_19.png" /></p>
 <p>The zero Kelvin minimum energy structure in a vacuum is often the starting point in solving
 chemical problems. It often represents surprisingly well the molecular properties despite
