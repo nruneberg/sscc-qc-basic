@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-site_name: SSCC QC Basics
-=======
 site_name: SSCC QC Basic
 site_url: https://nruneberg.github.io/sscc-qc-basic/
 repo_url: https://github.com/nruneberg/sscc-qc-basic
@@ -9,18 +6,11 @@ theme:
   logo: img/tmolex-and-puhti.svg
   favicon: img/tmolex-and-puhti.svg
 
->>>>>>> d7ec63a (Update site and fix broken files)
 nav:
   - Home: index.md
   - Preparations: preparations/README.md
   - Tutorial 1: tutorial1/README.md
   - Tutorial 2: tutorial2/README.md
-<<<<<<< HEAD
-theme:
-  name: material
-
-=======
 
 extra_css:
   - stylesheets/custom.css
->>>>>>> d7ec63a (Update site and fix broken files)
