@@ -38,8 +38,8 @@ replace  `your-username` with your actual username in order to make it a unique 
 When a job has finished, all output files are transferred to your project folder and deleted from Puhti's work directory.
 Amoung the result files yous should have a file called `slurm-XXXXXXXXXX.out` where `XXXXXXXXXX`is replaced with a 
 number that corresponds to the `JOBID` the job had in Puhti's queuing system.
-If you would like to have a closer look at the details of that job you should open a Terminal on your desktop.
-In the rerminal you can use the command `sacct` to collect various data related to the job. Give the command (replace JOBID with the actual number)
+If you would like to have a closer look at the details of that job you should open a `Terminal` on your desktop.
+In the terminal you can use the command `sacct` to collect various data related to the job. Give the command (replace JOBID with the actual number)
 
 ```bash
 sacct -X -j JOBID -o state,start,alloc,elapsed,cputime
