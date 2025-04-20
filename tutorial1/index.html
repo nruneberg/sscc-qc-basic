@@ -17,7 +17,7 @@
         <link rel="next" href="../tutorial2/">
       
       
-      <link rel="icon" href="../img/tmolex-and-puhti.svg">
+      <link rel="icon" href="../img/CSC_logo_Brilliant_pysty_1riv_rgb.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
@@ -84,7 +84,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="SSCC QC Basic" class="md-header__button md-logo" aria-label="SSCC QC Basic" data-md-component="logo">
       
-  <img src="../img/tmolex-and-puhti.svg" alt="logo">
+  <img src="../img/CSC_logo_Brilliant_pysty_1riv_rgb.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -193,7 +193,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="SSCC QC Basic" class="md-nav__button md-logo" aria-label="SSCC QC Basic" data-md-component="logo">
       
-  <img src="../img/tmolex-and-puhti.svg" alt="logo">
+  <img src="../img/CSC_logo_Brilliant_pysty_1riv_rgb.png" alt="logo">
 
     </a>
     SSCC QC Basic
@@ -700,13 +700,18 @@
 </ul>
 <div style="display: flex; gap: 20px; justify-content: space-between; align-items: flex-end;">
   <figure style="width: 45%; text-align: center; margin: 0;">
+<a href="../img/tmolex-and-ood.svg" class="lightbox">
     <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX via OOD" title="Using TmoleX via browser" style="width: 100%;">
     <figcaption>Using TmoleX via the browser</figcaption>
+</a>
   </figure>
   <figure style="width: 45%; text-align: center; margin: 0;">
+<a href="../img/tmolex-and-puhti_new.svg" class="lightbox">
     <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX locally" title="Using TmoleX locally over the network" style="width: 100%;">
     <figcaption>Using TmoleX from local pc</figcaption>
   </figure>
+</a>
+
 </div>
 
 <h2 id="task-1-optimize-the-ground-state-for-formaldehyde">Task 1: Optimize the ground state for formaldehyde</h2>
@@ -715,7 +720,7 @@ nuclear coordinates. This initial structure place the system on the
 energy surface that is uniquely defined by the computational model
 we are going to use (B-O approx.).  The performance of the model
 often vary at different parts of the surface.</p>
-<p><img alt="&quot;Potential energy surface&quot;" src="../img/pesurf.png" title="potential energy surface" /></p>
+<p><a href="../img/pesurf.png"><img alt="Potential energy surface" src="../img/pesurf.png" title="potential energy surface" /></a></p>
 <h3><span data-toc-label="New project">Launch TmoleX and create a new project</span></h3>
 
 <h4 id="use-via-your-browser">Use via your browser</h4>
@@ -725,10 +730,10 @@ your CSC/Haka user account.</p>
 <li>From there <a href="https://docs.csc.fi/computing/webinterface/desktop/#launching">launch a Desktop</a>. </li>
 <li>Open a <code>Terminal</code> and load the TURBOMOLE module <code>module load turbomole/7.8</code>.</li>
 <li>Start TmoleX with the command <code>TmoleX24</code>.
-<img alt="&quot;Launch Tmolex24&quot;" src="../img/ood_03.png" /></li>
+<a href="../img/ood_03.png"><img alt="&quot;Launch Tmolex24&quot;" src="../img/ood_03.png" /></a></li>
 <li>Select <code>New Project</code> and define a suitable project in the <code>File Name</code> slot
    (e.g. <code>/scratch/project_2013760/&lt;your-username&gt;/qc_tutorial1</code>).
-<img alt="&quot;Tmolex24 new project&quot;" src="../img/ood_04.png" /></li>
+<a href="../img/ood_04.png"><img alt="&quot;Tmolex24 new project&quot;" src="../img/ood_04.png" /></a></li>
 <li>Define your system and type of calculation. </li>
 <li>Small jobs can be run interactively: Start Job -&gt; Run (local)</li>
 <li>Larger jobs should be run as batch jobs: Start Job -&gt; Run (network). Example
@@ -743,9 +748,9 @@ your CSC/Haka user account.</p>
 on Puhti for the calculations. Accept the dialog.</li>
 <li>Define a suitable project directory (e.g. <code>~/qc_tutorial1</code>).</li>
 </ul>
-<p><img alt="&quot;Launch TmoleX GUI&quot;" src="../img/local_1.png" /></p>
+<p><a href="../img/local_1.png"><img alt="&quot;Launch TmoleX GUI&quot;" src="../img/local_1.png" /></a></p>
 <h3 id="define-your-first-turbomole-job">Define your first turbomole job</h3>
-<p><img alt="&quot;TmoleX steps&quot;" src="../img/local_2.png" /></p>
+<p><a href="../img/local_2.png"><img alt="&quot;TmoleX steps&quot;" src="../img/local_2.png" /></a></p>
 <p>A complete Turbomole job comprises the sequence:</p>
 <ul>
 <li><strong>Geometry - Atomic Attributes - Molecular Attributes - Method - Start Job - Results</strong></li>
@@ -755,30 +760,30 @@ on Puhti for the calculations. Accept the dialog.</li>
 <a href="https://www.turbomole.org/wp-content/uploads/2019/10/Tutorial_7-4.pdf">taken from a TURBOMOLE tutorial</a>
 highlights the most typical ones and their relation.</p>
 <p><img alt="&quot;TURBOMOLE modules&quot;" src="../img/tmoleDefineFlow.png" title="TURBOMOLE modules" /></p>
-<h3 id="geometry-build-formaldehyde">Geometry -- Build formaldehyde</h3>
+<h3 id="geometry-build-formaldehyde"><strong>Geometry</strong> -- Build formaldehyde</h3>
 <p>Open the 3D builder, right-click on canvas and load formaldehyde from the library
-<img alt="&quot;update&quot;" src="../img/local_3.png" /></p>
+<a href="../img/local_3.png"><img alt="&quot;update&quot;" src="../img/local_3.png" /></a></p>
 <p>Close the builder and continue to Atomic Attributes</p>
 <h3 id="atomic-attributes-select-basis-set">Atomic Attributes: Select basis set</h3>
 <p>Select the default def-SV(P) basis set</p>
-<p><img alt="&quot;update&quot;" src="../img/local_4.png" /> </p>
+<p><a href="../img/local_4.png"><img alt="&quot;update&quot;" src="../img/local_4.png" /></a>   </p>
 <p>Continue to Molecular Attributes</p>
 <h3 id="molecular-attributes-generate-initial-guess-mos">Molecular Attributes -- Generate initial guess MOs</h3>
 <p>Generate initial MOs by doing an extended Hückel calculation</p>
-<p><img alt="&quot;update&quot;" src="../img/local_5.png" /></p>
+<p><a href="../img/local_5.png"><img alt="&quot;update&quot;" src="../img/local_5.png" /></a></p>
 <p>Continue to Method</p>
 <h3 id="method-define-your-method">Method -- Define your method</h3>
 <p>Select the default method (ri-dft BP86/m3)</p>
-<p><img alt="&quot;update&quot;" src="../img/local_6.png" /></p>
+<p><a href="../img/local_6.png"><img alt="&quot;update&quot;" src="../img/local_6.png" /></a></p>
 <p>Continue to Start Job</p>
 <h3 id="start-job-define-your-job-type">Start Job -- Define your job type</h3>
 <p>We want to do a geometry optimization of the ground state.</p>
-<p><img alt="&quot;update&quot;" src="../img/local_7.png" /></p>
+<p><a href="../img/local_7.png"><img alt="&quot;update&quot;" src="../img/local_7.png" /></a></p>
 <p>Smaller jobs can be run directly, <code>Run (local)</code>, but for larger jobs we should reserve
 resourses via the queuing system.  Continue to <code>Run (network)</code></p>
 <h3 id="runnetwork-setup-remote-job">Run(network) -- Setup remote job</h3>
 <p>Click <strong>Save</strong> as the first dialog prompts for the folder to use for the job files.
-<img alt="&quot;update&quot;" src="../img/local_8.png" /></p>
+<a href="../img/local_8.png"><img alt="&quot;update&quot;" src="../img/local_8.png" /></a></p>
 <p>In the new dialog, we define the remote (Puhti) configuration:</p>
 <ul>
 <li>Which user account and project to use</li>
@@ -789,7 +794,7 @@ resourses via the queuing system.  Continue to <code>Run (network)</code></p>
 by using MPI parallelization (possible to run a job over several nodes). In this tutorial we will use the SMP version.</p>
 <p>Smaller jobs can be run directly (<code>Run (local)</code>), but for larger jobs we should reserve<br />
 resourses via the queuing system. 
-<img alt=" Prepare batch queue" src="../img/tmolex_7.png" /></p>
+<a href="../img/tmolex_7.png"><img alt=" Prepare batch queue" src="../img/tmolex_7.png" /></a></p>
 <ol>
 <li>The Machine is called <code>puhti-login12.bullx</code></li>
 <li><code>User</code> is your CSC username, <code>Group name</code> and <code>Identification</code> are just tags you can set to distinguish different configurations</li>
@@ -828,16 +833,16 @@ export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
 <p>For this tutorial, the default 1 minute interval to ping Puhti for the job status is ok, but for actual production jobs, that could be increased to e.g. 1 hour. The status can always be refreshed manually. This job should finish in seconds.</p>
 </li>
 </ul>
-<p><img alt="&quot;update&quot;" src="../img/local_12.png" /></p>
+<p><a href="../img/local_12.png"><img alt="&quot;update&quot;" src="../img/local_12.png" /></a></p>
 <h3 id="results-structure">Results -- structure</h3>
 <p>The geometry optimization needed 5 cycles to reach the stationary point on the energy surface.</p>
-<p><img alt="&quot;Optimized geometry&quot;" src="../img/local_13.png" /></p>
+<p><a href="../img/local_13.png"><img alt="&quot;Optimized geometry&quot;" src="../img/local_13.png" /></a></p>
 <h3 id="results-gradients">Results -- Gradients</h3>
 <p>The length of the arrows show how steep the energy surface is in that direction</p>
-<p><img alt="&quot;update&quot;" src="../img/local_14.png" /></p>
+<p><a href="../img/local_14.png"><img alt="&quot;update&quot;" src="../img/local_14.png" /></a></p>
 <p>At the end of the geometry optimization we have reached a stationary point
 (gradient smaller than a given threshold) that could correspond to:</p>
-<p><img alt="&quot;Stationary points on potential energy surface&quot;" src="../img/stationaryPoints.png" title="Stationary points on potential energy surface" /></p>
+<p><a href="../img/stationaryPoints.png" title="Stationary points on potential energy surface"><img alt="&quot;Stationary points on potential energy surface&quot;" src="../img/stationaryPoints.png" title="Stationary points on potential energy surface" /></a></p>
 <ul>
 <li>a minimum <strong>A</strong></li>
 <li>inflection point <strong>B</strong></li>
@@ -869,7 +874,7 @@ cgnce -h # to get help on usage
 actual -h 
 </code></pre>
 <p>Once the job has finished we note that all calculated frequencies are real, indicating that the structure corresponds to a true minimum.</p>
-<p><img alt="&quot;Frequency calculation results&quot;" src="../img/local_19.png" /></p>
+<p><a href="../img/local_19.png"><img alt="&quot;Frequency calculation results&quot;" src="../img/local_19.png" /></a></p>
 <p>The zero Kelvin minimum energy structure in a vacuum is often the starting point in solving
 chemical problems. It often represents surprisingly well the molecular properties despite
 all the approximations made. What could you use this information for? How to validate or improve
@@ -923,7 +928,7 @@ the model?</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "search.highlight", "search.filters", "lightbox"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
