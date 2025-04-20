@@ -25,8 +25,8 @@ Go to [puhti.csc.fi](https://puhti.csc.fi/) using a web browser and login using
 your CSC/Haka user account.
 
 1. From there [launch a Desktop](https://docs.csc.fi/computing/webinterface/desktop/#launching).
-![Launch Desktop](../img/ood_01.png)
-![Launch Desktop](../img/ood_02.png)
+[![Launch Desktop](../img/ood_01.png)](../img/ood_01.png)
+[![Launch Desktop](../img/ood_02.png)](../img/ood_02.png)
 		
    * Activate the `Reservation-> sscc_thu_small` that gives access to resourses specially dedicated for this course 
    * Select the project `project_2013760(SSCC2025)` that is used for this course 
@@ -52,7 +52,7 @@ resourses via the queuing system.
 2. The Machine is called `puhti-login12.bullx`
 3. User is your CSC username, Group name and Identification are just tags you can seti however you like
 =======
-![ Prepare batch queue](../img/tmolex_7.png)
+[![ Prepare batch queue](../img/tmolex_7.png)](../img/tmolex_7.png)
 
 1. In `Extras->Remote Systems->Add new Machine`
 2. The Machine is called `puhti-login12.bullx`

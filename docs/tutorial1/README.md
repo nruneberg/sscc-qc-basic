@@ -28,15 +28,19 @@
 
 <div style="display: flex; gap: 20px; justify-content: space-between; align-items: flex-end;">
   <figure style="width: 45%; text-align: center; margin: 0;">
+<a href="../img/tmolex-and-ood.svg" class="lightbox">
     <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX via OOD" title="Using TmoleX via browser" style="width: 100%;">
     <figcaption>Using TmoleX via the browser</figcaption>
+</a>
   </figure>
   <figure style="width: 45%; text-align: center; margin: 0;">
+<a href="../img/tmolex-and-puhti_new.svg" class="lightbox">
     <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX locally" title="Using TmoleX locally over the network" style="width: 100%;">
     <figcaption>Using TmoleX from local pc</figcaption>
   </figure>
-</div>
+</a>
 
+</div>
 
 ## Task 1: Optimize the ground state for formaldehyde
 We need an initial guess for the geometry specifying the 3N-6 internal
@@ -45,7 +49,7 @@ energy surface that is uniquely defined by the computational model
 we are going to use (B-O approx.).  The performance of the model
 often vary at different parts of the surface.
 
-!["Potential energy surface"](../img/pesurf.png "potential energy surface")
+[![Potential energy surface](../img/pesurf.png "potential energy surface")](../img/pesurf.png)
 
 <h3><span data-toc-label="New project">Launch TmoleX and create a new project</span></h3>
 
@@ -57,10 +61,10 @@ your CSC/Haka user account.
 1. From there [launch a Desktop](https://docs.csc.fi/computing/webinterface/desktop/#launching). 
 2. Open a `Terminal` and load the TURBOMOLE module `module load turbomole/7.8`.
 3. Start TmoleX with the command `TmoleX24`.
-!["Launch Tmolex24"](../img/ood_03.png)
+[!["Launch Tmolex24"](../img/ood_03.png)](../img/ood_03.png)
 4. Select `New Project` and define a suitable project in the `File Name` slot
    (e.g. `/scratch/project_2013760/<your-username>/qc_tutorial1`).
-!["Tmolex24 new project"](../img/ood_04.png)
+[!["Tmolex24 new project"](../img/ood_04.png)](../img/ood_04.png)
 5. Define your system and type of calculation. 
 6. Small jobs can be run interactively: Start Job -> Run (local)
 7. Larger jobs should be run as batch jobs: Start Job -> Run (network). Example
@@ -75,11 +79,11 @@ your CSC/Haka user account.
 on Puhti for the calculations. Accept the dialog.
 * Define a suitable project directory (e.g. `~/qc_tutorial1`).
 
-!["Launch TmoleX GUI"](../img/local_1.png)
+[!["Launch TmoleX GUI"](../img/local_1.png)](../img/local_1.png)
 
 ### Define your first turbomole job
 
-!["TmoleX steps"](../img/local_2.png)
+[!["TmoleX steps"](../img/local_2.png)](../img/local_2.png)
 
 A complete Turbomole job comprises the sequence:
 
@@ -93,10 +97,10 @@ highlights the most typical ones and their relation.
 !["TURBOMOLE modules"](../img/tmoleDefineFlow.png "TURBOMOLE modules")
 
 
-### Geometry -- Build formaldehyde
+### **Geometry** -- Build formaldehyde
 
 Open the 3D builder, right-click on canvas and load formaldehyde from the library
-!["update"](../img/local_3.png)
+[!["update"](../img/local_3.png)](../img/local_3.png)
 
 Close the builder and continue to Atomic Attributes
 
@@ -104,7 +108,7 @@ Close the builder and continue to Atomic Attributes
 
 Select the default def-SV(P) basis set
 
-!["update"](../img/local_4.png)	
+[!["update"](../img/local_4.png)](../img/local_4.png)	
 
 Continue to Molecular Attributes
 
@@ -112,7 +116,7 @@ Continue to Molecular Attributes
 
 Generate initial MOs by doing an extended Hückel calculation
 
-!["update"](../img/local_5.png)
+[!["update"](../img/local_5.png)](../img/local_5.png)
 
 Continue to Method
 
@@ -120,7 +124,7 @@ Continue to Method
 
 Select the default method (ri-dft BP86/m3)
 
-!["update"](../img/local_6.png)
+[!["update"](../img/local_6.png)](../img/local_6.png)
 
 Continue to Start Job
 
@@ -128,7 +132,7 @@ Continue to Start Job
 
 We want to do a geometry optimization of the ground state.
 
-!["update"](../img/local_7.png)
+[!["update"](../img/local_7.png)](../img/local_7.png)
 
 Smaller jobs can be run directly, `Run (local)`, but for larger jobs we should reserve
 resourses via the queuing system.  Continue to `Run (network)`
@@ -136,7 +140,7 @@ resourses via the queuing system.  Continue to `Run (network)`
 ### Run(network) -- Setup remote job
 
 Click **Save** as the first dialog prompts for the folder to use for the job files.
-!["update"](../img/local_8.png)
+[!["update"](../img/local_8.png)](../img/local_8.png)
 
 In the new dialog, we define the remote (Puhti) configuration:
 
@@ -149,7 +153,7 @@ by using MPI parallelization (possible to run a job over several nodes). In this
 
 Smaller jobs can be run directly (`Run (local)`), but for larger jobs we should reserve  
 resourses via the queuing system. 
-![ Prepare batch queue](../img/tmolex_7.png)
+[![ Prepare batch queue](../img/tmolex_7.png)](../img/tmolex_7.png)
 
 1. The Machine is called `puhti-login12.bullx`
 2. `User` is your CSC username, `Group name` and `Identification` are just tags you can set to distinguish different configurations
@@ -183,24 +187,24 @@ export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
 
 * For this tutorial, the default 1 minute interval to ping Puhti for the job status is ok, but for actual production jobs, that could be increased to e.g. 1 hour. The status can always be refreshed manually. This job should finish in seconds.
 
-!["update"](../img/local_12.png)
+[!["update"](../img/local_12.png)](../img/local_12.png)
 
 ### Results -- structure
 
 The geometry optimization needed 5 cycles to reach the stationary point on the energy surface.
 
-!["Optimized geometry"](../img/local_13.png)
+[!["Optimized geometry"](../img/local_13.png)](../img/local_13.png)
 
 ### Results -- Gradients
 
 The length of the arrows show how steep the energy surface is in that direction
 
-!["update"](../img/local_14.png)
+[!["update"](../img/local_14.png)](../img/local_14.png)
 
 At the end of the geometry optimization we have reached a stationary point
 (gradient smaller than a given threshold) that could correspond to:
 
-!["Stationary points on potential energy surface"](../img/stationaryPoints.png "Stationary points on potential energy surface")
+[!["Stationary points on potential energy surface"](../img/stationaryPoints.png "Stationary points on potential energy surface")](../img/stationaryPoints.png "Stationary points on potential energy surface")
 
 * a minimum **A**
 * inflection point **B**
@@ -246,7 +250,7 @@ actual -h
 
 Once the job has finished we note that all calculated frequencies are real, indicating that the structure corresponds to a true minimum.
 
-!["Frequency calculation results"](../img/local_19.png)
+[!["Frequency calculation results"](../img/local_19.png)](../img/local_19.png)
 
 The zero Kelvin minimum energy structure in a vacuum is often the starting point in solving
 chemical problems. It often represents surprisingly well the molecular properties despite

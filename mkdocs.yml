@@ -3,8 +3,13 @@ site_url: https://nruneberg.github.io/sscc-qc-basic/
 repo_url: https://github.com/nruneberg/sscc-qc-basic
 theme:
   name: material
-  logo: img/tmolex-and-puhti.svg
-  favicon: img/tmolex-and-puhti.svg
+  logo: img/CSC_logo_Brilliant_pysty_1riv_rgb.png
+  favicon: img/CSC_logo_Brilliant_pysty_1riv_rgb.png
+  features:
+    - navigation.instant
+    - search.highlight
+    - search.filters
+    - lightbox
 
 nav:
   - Home: index.md
