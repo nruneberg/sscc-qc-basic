@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-tmolex" class="md-skip">
+        <a href="#using-tmolex-to-run-turbomole-jobs-on-puhti" class="md-skip">
           Skip to content
         </a>
       
@@ -292,6 +292,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#setup-tmolex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup TmoleX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -302,18 +311,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#use-via-your-browser" class="md-nav__link">
+  <a href="#use-tmolex-via-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      Use via your browser
+      Use TmoleX via browser
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#prepare-for-batch-jobs" class="md-nav__link">
+  <a href="#prepare-tmolex-for-batch-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Prepare for batch jobs
+      Prepare TmoleX for batch jobs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-your-own-tmolex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install your own TmoleX
     </span>
   </a>
   
@@ -403,6 +421,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#setup-tmolex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup TmoleX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -413,18 +440,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#use-via-your-browser" class="md-nav__link">
+  <a href="#use-tmolex-via-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      Use via your browser
+      Use TmoleX via browser
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#prepare-for-batch-jobs" class="md-nav__link">
+  <a href="#prepare-tmolex-for-batch-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Prepare for batch jobs
+      Prepare TmoleX for batch jobs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-your-own-tmolex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install your own TmoleX
     </span>
   </a>
   
@@ -454,76 +490,88 @@
   
 
 
-<h1 id="setup-tmolex">Setup TmoleX</h1>
-<p><a href="https://www.3ds.com/products/biovia/turbomole">TmoleX</a> is an easy to use graphical user interface to handle <a href="https://www.turbomole.org/turbomole/turbomole-features/">TURBOMOLE</a> calculations. TmoleX includes a structure builder and tools for preparing TURBOMOLE jobs and analyzing results. TmoleX can also be used to submit and supervise TURBOMOLE jobs on CSC's supercomputers.</p>
-<p>The free TmoleX Client version can be used from your local Windows, Linux, or MacOS desktop to run TURBOMOLE at CSC. It can be freely downloaded (requires registration) from the <a href="https://discover.3ds.com/free-download-biovia-turbomole-demo-version">Dassault Systèmes website</a>. This is a demo version that also includes a restricted version of TURBOMOLE.</p>
-<div style="display: flex; gap: 20px; justify-content: space-between;">
-  <figure style="width: 45%; text-align: center;">
-    <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX network scheme" title="Using TmoleX network scheme" style="width: 100%;">
-    <figcaption>Using TmoleX via browser</figcaption>
+<h1 id="using-tmolex-to-run-turbomole-jobs-on-puhti">Using TmoleX to Run TURBOMOLE Jobs on Puhti</h1>
+<p>This guide helps you set up the TmoleX graphical interface to run TURBOMOLE calculations on CSC's Puhti supercomputer.</p>
+<h2 id="setup-tmolex">Setup TmoleX</h2>
+<p><a href="https://www.3ds.com/products/biovia/turbomole">TmoleX</a> is a user-friendly graphical interface for preparing, submitting, and analyzing TURBOMOLE jobs. It includes a structure builder and tools to manage calculations, both locally and on remote HPC systems such as CSC's Puhti. You can run TmoleX in two ways:</p>
+<ul>
+<li>Via browser through CSC’s remote desktop interface.</li>
+<li>Locally on your desktop and submit jobs to Puhti over the network.</li>
+</ul>
+<p>The free TmoleX Client version can be used from your local Windows, Linux, or macOS desktop to run TURBOMOLE at CSC. It can be downloaded (registration required) from the <a href="https://discover.3ds.com/free-download-biovia-turbomole-demo-version">Dassault Systèmes website</a>. This demo version includes a restricted version of TURBOMOLE.</p>
+<div style="display: flex; gap: 20px; justify-content: space-between; align-items: flex-end;">
+  <figure style="width: 45%; text-align: center; margin: 0;">
+<a href="../img/tmolex-and-ood.svg" class="lightbox">
+    <img src="../img/tmolex-and-ood.svg" alt="Using TmoleX via OOD" title="Using TmoleX via browser" style="width: 100%;">
+    <figcaption>Using TmoleX via the browser</figcaption>
+</a>
   </figure>
-  <figure style="width: 45%; text-align: center;">
-    <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX network scheme" title="Using TmoleX network scheme" style="width: 100%;">
-    <figcaption>Using TmoleX from local computer</figcaption>
+  <figure style="width: 45%; text-align: center; margin: 0;">
+<a href="../img/tmolex-and-puhti_new.svg" class="lightbox">
+    <img src="../img/tmolex-and-puhti_new.svg" alt="Using TmoleX locally" title="Using TmoleX locally over the network" style="width: 100%;">
+    <figcaption>Using TmoleX from your local pc</figcaption>
   </figure>
+</a>
+
 </div>
 
 <h2 id="usage">Usage</h2>
-<h3 id="use-via-your-browser">Use via your browser</h3>
-<p>Go to <a href="https://puhti.csc.fi/">puhti.csc.fi</a> using a web browser and login using
-your CSC/Haka user account.</p>
+<h3 id="use-tmolex-via-browser">Use TmoleX via browser</h3>
 <ol>
 <li>
-<p>From there <a href="https://docs.csc.fi/computing/webinterface/desktop/#launching">launch a Desktop</a>.
-<a href="../img/ood_01.png"><img alt="Launch Desktop" src="../img/ood_01.png" /></a>
-<a href="../img/ood_02.png"><img alt="Launch Desktop" src="../img/ood_02.png" /></a></p>
+<p>Open <a href="https://puhti.csc.fi">puhti.csc.fi</a> in your browser and log in with your CSC/Haka credentials.</p>
 </li>
 <li>
-<p>Activate the <code>Reservation-&gt; sscc_thu_small</code> that gives access to resourses specially dedicated for this course </p>
+<p>Launch a Desktop session.
+   <a href="../img/ood_01.png"><img alt="Launch Desktop" src="../img/ood_01.png" /></a></p>
 </li>
-<li>Select the project <code>project_2013760(SSCC2025)</code> that is used for this course </li>
-<li>Go with the default resourses  </li>
-<li>Once resourses have been allocated <code>Launch Desktop</code>  </li>
-<li>Open a <code>Terminal</code> and load the TURBOMOLE module <code>module load turbomole/7.8</code>.</li>
+<li>
+<p>In the Desktop launcher:</p>
+<ul>
+<li>Activate reservation: <code>sscc_thu_small</code></li>
+<li>Project: <code>project_2013760 (SSCC2025)</code></li>
+<li>Partition: <code>small</code></li>
+<li>Use the default resources and submit the request</li>
+</ul>
+<p><a href="../img/ood_02.png"><img alt="Activate reservation" src="../img/ood_02.png" /></a></p>
+</li>
+<li>
+<p>Once resources are allocated, launch the Desktop.</p>
+</li>
+<li>Open a terminal and load TURBOMOLE: <code>module load turbomole/7.8</code> </li>
 <li>Start TmoleX with the command <code>TmoleX24</code>.</li>
-<li>Select <code>New Project</code> and define a suitable project in the <code>File Name</code> slot
-   (e.g. <code>/scratch/project_2013760/&lt;your-username&gt;/qc_tutorial1</code>).
-   In the menu <code>Extras-&gt;Preferences-&gt;General</code> you can set the <code>User directory</code> to point to you present directory <code>/scratch/project_2013760/&lt;your-username&gt;</code></li>
-<li>Define your system and type of calculation. </li>
-<li>Small jobs can be run interactively: Start Job -&gt; Run (local)</li>
-<li>Larger jobs should be run as batch jobs: Start Job -&gt; Run (network).</li>
 </ol>
-<h3 id="prepare-for-batch-jobs">Prepare for batch jobs</h3>
-<p>Smaller jobs can be run directly (<code>Run (local)</code>), but for larger jobs we should reserve<br />
-resourses via the queuing system. 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<h3 id="prepare-tmolex-for-batch-jobs">Prepare TmoleX for batch jobs</h3>
+<ul>
+<li>Select <code>New Project</code> and define a project path (e.g. <code>/scratch/project_2013760/&lt;your-username&gt;/qc_tutorial1</code>).</li>
+<li>Go to <code>Extras-&gt;Preferences-&gt;General</code> and set  <code>User directory</code> to <code>/scratch/project_2013760/&lt;your-username&gt;</code></li>
+<li>Small jobs can be run interactively, but for larger jobs you should use the queue system. </li>
+</ul>
+<p>Now configure the remote machine:</p>
 <ol>
-<li>In <code>Extras-&gt;Remote Systems-&gt;Add new Machine</code></li>
-<li>The Machine is called <code>puhti-login12.bullx</code></li>
+<li>In TmoleX open <code>Extras-&gt;Remote Systems-&gt;Add new Machine</code></li>
 <li>
-<h1 id="user-is-your-csc-username-group-name-and-identification-are-just-tags-you-can-seti-however-you-like">User is your CSC username, Group name and Identification are just tags you can seti however you like</h1>
-<p><a href="../img/tmolex_7.png"><img alt=" Prepare batch queue" src="../img/tmolex_7.png" /></a></p>
+<p>Set Machine name to <code>puhti-login12.bullx</code>  </p>
+<p><a href="../img/tmolex_7.png"><img alt="Prepare batch queue" src="../img/tmolex_7.png" /></a></p>
 </li>
 <li>
-<p>In <code>Extras-&gt;Remote Systems-&gt;Add new Machine</code></p>
+<p><code>User</code> is your CSC username, <code>Group name</code> and <code>Identification</code> are just tags you can set to distinguish different configurations  </p>
 </li>
-<li>The Machine is called <code>puhti-login12.bullx</code></li>
-<li><code>User</code> is your CSC username, <code>Group name</code> and <code>Identification</code> are just tags you can set to distinguish different configurations</li>
-<li>Tick <code>Expert settings</code>and <code>no password</code>.</li>
+<li>Tick <code>Expert settings</code> and <code>no password</code>.  </li>
 <li>Work directory is a place where temporary files are stored:
-   /scratch/project_2013760/<your-username>/TM_TMPDIR </li>
-<li>
-<p>TURBOMOLE directory should point to were it is installed:
-   /appl/soft/chem/turbomole/7.8/TURBOMOLE</p>
-</li>
-<li>
-<p>Tick <code>Use queuing system</code></p>
-</li>
+   <code>/scratch/project_2013760/&lt;your-username&gt;/TM_TMPDIR</code> </li>
+<li>TURBOMOLE directory should point to were it is installed:
+   <code>/appl/soft/chem/turbomole/7.8/TURBOMOLE</code></li>
+<li>Tick <code>Use queuing system</code></li>
 <li>Submit with <code>sbatch</code> and Check status with  <code>squeue -u $USER</code></li>
-<li>Untick <code>add PARA_ARCH</code> and <code>add PARNODES</code>    </li>
-<li>In the field "Script before job execution" add:</li>
+<li>
+<p>Untick <code>add PARA_ARCH</code> and <code>add PARNODES</code>.</p>
+</li>
+<li>
+<p>In the field "Script before job execution" add:</p>
+</li>
 </ol>
-<pre><code class="language-bash">#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
+<pre><code>#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
 #SBATCH --partition=small                             # queue
 #SBATCH --nodes=1                                     # for SMP only 1 is possible
 #SBATCH --cpus-per-task=4                             # SMP threads
@@ -536,9 +584,9 @@ module load turbomole/7.8
 export PARNODES=$SLURM_CPUS_PER_TASK                  # for SMP
 export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
 </code></pre>
-<ol>
-<li><strong>Remember to save save the settings using <code>Save Machine</code>.</strong>   </li>
-</ol>
+<ul>
+<li><strong>Remember to save the settings using <code>Save Machine</code>.</strong></li>
+</ul>
 <h3 id="install-your-own-tmolex">Install your own TmoleX</h3>
 <p>Install the TmoleX client on your local workstation. For details, see the
 registration and download page at

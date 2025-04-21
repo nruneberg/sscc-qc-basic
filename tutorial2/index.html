@@ -500,15 +500,15 @@ replace  <code>your-username</code> with your actual username in order to make i
 <li>If you use a locally installed TmoleX then define the new project under your home directory, e.g. <code>~/qc_tutorial2</code> .</li>
 <li>A new job is initiated within your new TmoleX project. </li>
 <li>Rename the first job in this project according to the <code>cid</code> identifier you picked from the list
-<img alt="&quot;Rename job&quot;" src="../img/t2_0.png" /></li>
+<a href="../img/t2_0.png"><img alt="&quot;Rename job&quot;" src="../img/t2_0.png" /></a></li>
 <li>In the first <code>Geometry</code> subsection paste your SMILES string into the slot <code>SMILES to 3D</code>. Pushing the buttons should launch the TmoleX viewer showing the 3D structure of the molecule corresponding to your SMILES string.
-<img alt="&quot;SMILES&quot;" src="../img/t2_1.png" /></li>
+<a href="../img/t2_1.png"><img alt="&quot;SMILES&quot;" src="../img/t2_1.png" /></a></li>
 <li>Since the conversion from <code>SMILES</code> to <code>xyz</code> is quite rough it's often a good idea to do a preoptimization. 
-<img alt="&quot;SMILES&quot;" src="../img/t2_2.png" /></li>
+<a href="../img/t2_2.png"><img alt="&quot;SMILES&quot;" src="../img/t2_2.png" /></a></li>
 <li>Continue in a similar way as we did with formaldehyde and optimize the structure. Do a SMP parallel calculation and request for 8 cores.
-<img alt="&quot;start&quot;" src="../img/t2_3.png" /> </li>
+<a href="../img/t2_3.png"><img alt="&quot;start&quot;" src="../img/t2_3.png" /></a> </li>
 <li>Once the structure optimization has (hopefully) converged, fill in the total energy of that structure into the table.
-<img alt="&quot;finish&quot;" src="../img/t2_4.png" />  </li>
+<a href="../img/t2_4.png"><img alt="&quot;finish&quot;" src="../img/t2_4.png" /></a>  </li>
 </ol>
 <h2 id="examine-how-long-it-took-to-run-the-job">Examine how long it took to run the job</h2>
 <p>When a job has finished, all output files are transferred to your project folder and deleted from Puhti's work directory.
@@ -573,23 +573,23 @@ Such batch jobs can be easily done with TmoleX.</p>
 <ol>
 <li>Create a new project and select <code>Templates -&gt; New/Edit Template</code></li>
 </ol>
-<p><img alt="&quot;finish&quot;" src="../img/t2_b1.png" /></p>
+<p><a href="../img/t2_b1.png"><img alt="&quot;finish&quot;" src="../img/t2_b1.png" /></a></p>
 <ol>
 <li>Define two job steps corresponding to an AM1 geometry optimization followed by a dft/bp86/sv(p) optimization.</li>
 </ol>
-<p><img alt="&quot;finish&quot;" src="../img/t2_b3.png" /></p>
+<p><a href="../img/t2_b3.png"><img alt="&quot;finish&quot;" src="../img/t2_b3.png" /></a></p>
 <ol>
 <li>
 <p>Create a batch <code>New Batch Job</code> and hit <code>Add List of SMILES</code>. In that window add some of the our SMILES strings followed by a name (here the cid number)
-<img alt="&quot;finish&quot;" src="../img/t2_b5.png" /></p>
+<a href="../img/t2_b5.png"><img alt="&quot;finish&quot;" src="../img/t2_b5.png" /></a></p>
 </li>
 <li>
 <p>For the batch of molecules <code>Choose Job Template</code> -&gt; <code>Charge: Use from input</code> -&gt; <code>Apply Job Template</code> <br />
-<img alt="&quot;finish&quot;" src="../img/t2_b6.png" /></p>
+<a href="../img/t2_b6.png"><img alt="&quot;finish&quot;" src="../img/t2_b6.png" /></a></p>
 </li>
 <li>
 <p>Once the template has been selected start the job
-<img alt="&quot;finish&quot;" src="../img/t2_b7.png" /></p>
+<a href="../img/t2_b6.png"><img alt="&quot;finish&quot;" src="../img/t2_b7.png" /></a></p>
 </li>
 </ol>
 <p>This ends the tutorial.</p>
