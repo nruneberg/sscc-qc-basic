@@ -516,12 +516,12 @@ Amoung the result files yous should have a file called <code>slurm-XXXXXXXXXX.ou
 number that corresponds to the <code>JOBID</code> the job had in Puhti's queuing system.
 If you would like to have a closer look at the details of that job you should open a <code>Terminal</code> on your desktop.
 In the terminal you can use the command <code>sacct</code> to collect various data related to the job. Give the command (replace JOBID with the actual number)</p>
-<pre><code class="language-bash">sacct -X -j JOBID -o state,start,alloc,elapsed,cputime
-     State               Start  AllocCPUS    Elapsed    CPUTime 
----------- ------------------- ---------- ---------- ---------- 
- COMPLETED 2024-04-15T15:11:06          4   00:10:51   00:43:24 
-</code></pre>
-<p>Here the <code>Elapsed</code> time is the wall time the job took to finish. </p>
+<p><div class="highlight"><pre><span></span><code>sacct<span class="w"> </span>-X<span class="w"> </span>-j<span class="w"> </span>JOBID<span class="w"> </span>-o<span class="w"> </span>state,start,alloc,elapsed,cputime
+<span class="w">     </span>State<span class="w">               </span>Start<span class="w">  </span>AllocCPUS<span class="w">    </span>Elapsed<span class="w">    </span>CPUTime<span class="w"> </span>
+----------<span class="w"> </span>-------------------<span class="w"> </span>----------<span class="w"> </span>----------<span class="w"> </span>----------<span class="w"> </span>
+<span class="w"> </span>COMPLETED<span class="w"> </span><span class="m">2024</span>-04-15T15:11:06<span class="w">          </span><span class="m">4</span><span class="w">   </span><span class="m">00</span>:10:51<span class="w">   </span><span class="m">00</span>:43:24<span class="w"> </span>
+</code></pre></div>
+Here the <code>Elapsed</code> time is the wall time the job took to finish. </p>
 <p>Use the optimized structure and define a new job, <code>Start new job with current data</code>, where you change the basis set (<code>Atomic Attributes</code>) to <code>def2-TZVP</code> and define the job as a 
 <code>Single Point-&gt; Energy (ground state)</code> . Repeat this calculation  using 1,2,4 and 8 cores. 
 Tabulate the values into a table. You can calculate the "speedup" by

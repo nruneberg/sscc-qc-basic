@@ -568,10 +568,8 @@
 <p>Untick <code>add PARA_ARCH</code> and <code>add PARNODES</code>.</p>
 </li>
 <li>
-<p>In the field "Script before job execution" add:</p>
-</li>
-</ol>
-<pre><code>#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
+<p>In the field "Script before job execution" add:
+<div class="highlight"><pre><span></span><code>#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
 #SBATCH --partition=small                             # queue
 #SBATCH --nodes=1                                     # for SMP only 1 is possible
 #SBATCH --cpus-per-task=4                             # SMP threads
@@ -583,10 +581,12 @@ export PARA_ARCH=SMP                                  # use SMP threads
 module load turbomole/7.8
 export PARNODES=$SLURM_CPUS_PER_TASK                  # for SMP
 export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
-</code></pre>
-<ul>
-<li><strong>Remember to save the settings using <code>Save Machine</code>.</strong></li>
-</ul>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Remember to save the settings using <code>Save Machine</code>.</strong></p>
+</li>
+</ol>
 <h3 id="install-your-own-tmolex">Install your own TmoleX</h3>
 <p>Install the TmoleX client on your local workstation. For details, see the
 registration and download page at

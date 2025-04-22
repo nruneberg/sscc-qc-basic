@@ -342,18 +342,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#use-via-your-browser" class="md-nav__link">
+  <a href="#launch-tmolex-via-your-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      Use via your browser
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-locally-installed-tmolex" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use locally installed TmoleX
+      Launch TmoleX via your browser
     </span>
   </a>
   
@@ -539,18 +530,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#use-via-your-browser" class="md-nav__link">
+  <a href="#launch-tmolex-via-your-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      Use via your browser
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-locally-installed-tmolex" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use locally installed TmoleX
+      Launch TmoleX via your browser
     </span>
   </a>
   
@@ -714,6 +696,11 @@
 
 </div>
 
+<p>The TURBOMOLE philosophy or program structure is based on running different
+"modules" one after another. The following diagram
+<a href="https://www.turbomole.org/wp-content/uploads/2019/10/Tutorial_7-4.pdf">taken from a TURBOMOLE tutorial</a>
+highlights the most typical ones and their relation.</p>
+<p><img alt="&quot;TURBOMOLE modules&quot;" src="../img/tmoleDefineFlow.png" title="TURBOMOLE modules" /></p>
 <h2 id="task-1-optimize-the-ground-state-for-formaldehyde">Task 1: Optimize the ground state for formaldehyde</h2>
 <p>We need an initial guess for the geometry specifying the 3N-6 internal
 nuclear coordinates. This initial structure place the system on the
@@ -721,9 +708,7 @@ energy surface that is uniquely defined by the computational model
 we are going to use (B-O approx.).  The performance of the model
 often vary at different parts of the surface.</p>
 <p><a href="../img/pesurf.png"><img alt="Potential energy surface" src="../img/pesurf.png" title="potential energy surface" /></a></p>
-<h3><span data-toc-label="New project">Launch TmoleX and create a new project</span></h3>
-
-<h4 id="use-via-your-browser">Use via your browser</h4>
+<h3 id="launch-tmolex-via-your-browser">Launch TmoleX via your browser</h3>
 <p>Go to <a href="https://puhti.csc.fi/">puhti.csc.fi</a> using a web browser and login using
 your CSC/Haka user account.</p>
 <ol>
@@ -740,14 +725,6 @@ your CSC/Haka user account.</p>
    settings are given below. Note that passwordless connection doesn't work via
    the browser. Remember to save the settings using <code>Save Machine</code>.</li>
 </ol>
-<h4 id="use-locally-installed-tmolex">Use locally installed TmoleX</h4>
-<ul>
-<li>If you have installed TmoleX on your own laptop, launch it from icon/menu</li>
-<li>On the CSC workstations TmoleX is already installed, launch it from icon/menu</li>
-<li>Note. TmoleX warns about not finding a license. This is ok. We'll use the TURBOMOLE license
-on Puhti for the calculations. Accept the dialog.</li>
-<li>Define a suitable project directory (e.g. <code>~/qc_tutorial1</code>).</li>
-</ul>
 <p><a href="../img/local_1.png"><img alt="&quot;Launch TmoleX GUI&quot;" src="../img/local_1.png" /></a></p>
 <h3 id="define-your-first-turbomole-job">Define your first turbomole job</h3>
 <p><a href="../img/local_2.png"><img alt="&quot;TmoleX steps&quot;" src="../img/local_2.png" /></a></p>
@@ -755,11 +732,6 @@ on Puhti for the calculations. Accept the dialog.</li>
 <ul>
 <li><strong>Geometry - Atomic Attributes - Molecular Attributes - Method - Start Job - Results</strong></li>
 </ul>
-<p>The TURBOMOLE philosophy or program structure is based on running different
-"modules" one after another. The following diagram
-<a href="https://www.turbomole.org/wp-content/uploads/2019/10/Tutorial_7-4.pdf">taken from a TURBOMOLE tutorial</a>
-highlights the most typical ones and their relation.</p>
-<p><img alt="&quot;TURBOMOLE modules&quot;" src="../img/tmoleDefineFlow.png" title="TURBOMOLE modules" /></p>
 <h3 id="geometry-build-formaldehyde"><strong>Geometry</strong> -- Build formaldehyde</h3>
 <p>Open the 3D builder, right-click on canvas and load formaldehyde from the library
 <a href="../img/local_3.png"><img alt="&quot;update&quot;" src="../img/local_3.png" /></a></p>
@@ -795,6 +767,10 @@ by using MPI parallelization (possible to run a job over several nodes). In this
 <p>Smaller jobs can be run directly (<code>Run (local)</code>), but for larger jobs we should reserve<br />
 resourses via the queuing system. 
 <a href="../img/tmolex_7.png"><img alt=" Prepare batch queue" src="../img/tmolex_7.png" /></a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use the Desktop Clipboard to easily copy content between the notes and the Desktop environment.</p>
+</div>
 <ol>
 <li>The Machine is called <code>puhti-login12.bullx</code></li>
 <li><code>User</code> is your CSC username, <code>Group name</code> and <code>Identification</code> are just tags you can set to distinguish different configurations</li>
@@ -811,27 +787,23 @@ resourses via the queuing system.
 <li>Untick <code>add PARA_ARCH</code> and <code>add PARNODES</code>    </li>
 <li>In the field "Script before job execution" add:</li>
 </ol>
-<pre><code class="language-bash">#SBATCH --reservation=sscc_thu_small                  # resource reservation for school
-#SBATCH --partition=small                             # queue
-#SBATCH --nodes=1                                     # for SMP only 1 is possible
-#SBATCH --cpus-per-task=4                             # SMP threads
-#SBATCH --account=project_2013760                     # insert here the project to be billed
-#SBATCH --time=00:30:00                               # time as `hh:mm:ss`
-source /appl/profile/zz-csc-env.sh
-ulimit -s unlimited
-export PARA_ARCH=SMP                                  # use SMP threads
-module load turbomole/7.8
-export PARNODES=$SLURM_CPUS_PER_TASK                  # for SMP
-export PATH=$TURBODIR/bin/`$TURBODIR/scripts/sysname`:$PATH
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><span class="c1">#SBATCH --reservation=sscc_thu_small                  # resource reservation for school</span>
+<span class="c1">#SBATCH --partition=small                             # queue</span>
+<span class="c1">#SBATCH --nodes=1                                     # for SMP only 1 is possible</span>
+<span class="c1">#SBATCH --cpus-per-task=4                             # SMP threads</span>
+<span class="c1">#SBATCH --account=project_2013760                     # insert here the project to be billed</span>
+<span class="c1">#SBATCH --time=00:30:00                               # time as `hh:mm:ss`</span>
+<span class="nb">source</span><span class="w"> </span>/appl/profile/zz-csc-env.sh
+<span class="nb">ulimit</span><span class="w"> </span>-s<span class="w"> </span>unlimited
+<span class="nb">export</span><span class="w"> </span><span class="nv">PARA_ARCH</span><span class="o">=</span>SMP<span class="w">                                  </span><span class="c1"># use SMP threads</span>
+module<span class="w"> </span>load<span class="w"> </span>turbomole/7.8
+<span class="nb">export</span><span class="w"> </span><span class="nv">PARNODES</span><span class="o">=</span><span class="nv">$SLURM_CPUS_PER_TASK</span><span class="w">                  </span><span class="c1"># for SMP</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$TURBODIR</span>/bin/<span class="sb">`</span><span class="nv">$TURBODIR</span>/scripts/sysname<span class="sb">`</span>:<span class="nv">$PATH</span>
+</code></pre></div>
+*  <strong>Remember to save save the settings using <code>Save Machine</code>.</strong> <br />
+<em>   Click </em><em>Start Job</em>* at the bottom right</p>
 <ul>
-<li><strong>Remember to save save the settings using <code>Save Machine</code>.</strong>   </li>
-<li>
-<p>Click <strong>Start Job</strong> at the bottom right</p>
-</li>
-<li>
-<p>For this tutorial, the default 1 minute interval to ping Puhti for the job status is ok, but for actual production jobs, that could be increased to e.g. 1 hour. The status can always be refreshed manually. This job should finish in seconds.</p>
-</li>
+<li>For this tutorial, the default 1 minute interval to ping Puhti for the job status is ok, but for actual production jobs, that could be increased to e.g. 1 hour. The status can always be refreshed manually. This job should finish in seconds.</li>
 </ul>
 <p><a href="../img/local_12.png"><img alt="&quot;update&quot;" src="../img/local_12.png" /></a></p>
 <h3 id="results-structure">Results -- structure</h3>
@@ -853,26 +825,27 @@ A positive curvature corresponds to a minimum, a negative to a maximum.</p>
 <h3 id="vibrational-spectrum">Vibrational spectrum</h3>
 <p>In order to verify that the stationary point is a true minimum
 (positive curvature in all directions = real frequencies)</p>
-<p>Start a frequency calculation (Reuse data by just hitting "Start new job by using current data as input" )</p>
+<p>Start a frequency calculation (Reuse data by just hitting <code>Start new job with current data</code> )</p>
 <p><img alt="&quot;Start new job from previous results&quot;" src="../img/local_16.png" /></p>
 <p>In the "Job typ" list select "Spectra &amp; Excited States --&gt; IR &amp; vibrational frequencies"</p>
 <p>Select "Run (Network)" to launch the job.</p>
-<p>Once the job finishes (you can refresh the view - wait for results to be retreived).
-You can also open a separate terminal on your Desktop (or ssh from your local pc),
-and follow the job status with slurm commands directly, e.g. with:</p>
-<pre><code class="language-bash">squeue -u $USER # my current running or queuing jobs
-sacct           # my ended jobs for the last day
-sacct -X -o jobid,start,jobname,state,elapsed,alloc # last jobs with custom fields
-</code></pre>
-<p>More on these in <a href="https://csc-training.github.io/csc-env-eff/hands-on/batch_resources/tutorial_sacct_and_seff.html">CSC Computing Environment self learning materials</a></p>
+<p>From your <code>ProjectList</code>, you can select a job from a project to monitor its progress. You can refresh the view, 
+but please be patient as the data may take a moment to update.
+You can also open a separate terminal in the job’s directory (right-click on the job → Open Shell) and check the
+job status directly using Slurm commands, for example:</p>
+<p><div class="highlight"><pre><span></span><code>squeue<span class="w"> </span>-u<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span><span class="c1"># my current running or queuing jobs</span>
+sacct<span class="w">           </span><span class="c1"># my ended jobs for the last day</span>
+sacct<span class="w"> </span>-X<span class="w"> </span>-o<span class="w"> </span>jobid,start,jobname,state,elapsed,alloc<span class="w"> </span><span class="c1"># last jobs with custom fields</span>
+</code></pre></div>
+More on these in <a href="https://csc-training.github.io/csc-env-eff/hands-on/batch_resources/tutorial_sacct_and_seff.html">CSC Computing Environment self learning materials</a></p>
 <p>A local terminal on Puhti also gives access to some additional tools and scripts
 that come with TURBOMOLE that can be nice to follow or post process the data. You
 can find these e.g.</p>
-<pre><code class="language-bash">module load turbomole/7.8
-ls $TURBODIR/scripts/
-cgnce -h # to get help on usage
-actual -h 
-</code></pre>
+<div class="highlight"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>turbomole/7.8
+ls<span class="w"> </span><span class="nv">$TURBODIR</span>/scripts/
+cgnce<span class="w"> </span>-h<span class="w"> </span><span class="c1"># to get help on usage</span>
+actual<span class="w"> </span>-h<span class="w"> </span>
+</code></pre></div>
 <p>Once the job has finished we note that all calculated frequencies are real, indicating that the structure corresponds to a true minimum.</p>
 <p><a href="../img/local_19.png"><img alt="&quot;Frequency calculation results&quot;" src="../img/local_19.png" /></a></p>
 <p>The zero Kelvin minimum energy structure in a vacuum is often the starting point in solving
