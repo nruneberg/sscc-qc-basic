@@ -42,6 +42,13 @@
 
 </div>
 
+The TURBOMOLE philosophy or program structure is based on running different
+"modules" one after another. The following diagram
+[taken from a TURBOMOLE tutorial](https://www.turbomole.org/wp-content/uploads/2019/10/Tutorial_7-4.pdf)
+highlights the most typical ones and their relation.
+
+!["TURBOMOLE modules"](../img/tmoleDefineFlow.png "TURBOMOLE modules")
+
 ## Task 1: Optimize the ground state for formaldehyde
 We need an initial guess for the geometry specifying the 3N-6 internal
 nuclear coordinates. This initial structure place the system on the
@@ -51,9 +58,8 @@ often vary at different parts of the surface.
 
 [![Potential energy surface](../img/pesurf.png "potential energy surface")](../img/pesurf.png)
 
-<h3><span data-toc-label="New project">Launch TmoleX and create a new project</span></h3>
 
-#### Use via your browser
+### Launch TmoleX via your browser
 
 Go to [puhti.csc.fi](https://puhti.csc.fi/) using a web browser and login using
 your CSC/Haka user account.
@@ -71,14 +77,6 @@ your CSC/Haka user account.
    settings are given below. Note that passwordless connection doesn't work via
    the browser. Remember to save the settings using `Save Machine`.
  
-####  Use locally installed TmoleX
-
-* If you have installed TmoleX on your own laptop, launch it from icon/menu
-* On the CSC workstations TmoleX is already installed, launch it from icon/menu
-* Note. TmoleX warns about not finding a license. This is ok. We'll use the TURBOMOLE license
-on Puhti for the calculations. Accept the dialog.
-* Define a suitable project directory (e.g. `~/qc_tutorial1`).
-
 [!["Launch TmoleX GUI"](../img/local_1.png)](../img/local_1.png)
 
 ### Define your first turbomole job
@@ -88,13 +86,6 @@ on Puhti for the calculations. Accept the dialog.
 A complete Turbomole job comprises the sequence:
 
 * **Geometry - Atomic Attributes - Molecular Attributes - Method - Start Job - Results**
-
-The TURBOMOLE philosophy or program structure is based on running different
-"modules" one after another. The following diagram
-[taken from a TURBOMOLE tutorial](https://www.turbomole.org/wp-content/uploads/2019/10/Tutorial_7-4.pdf)
-highlights the most typical ones and their relation.
-
-!["TURBOMOLE modules"](../img/tmoleDefineFlow.png "TURBOMOLE modules")
 
 
 ### **Geometry** -- Build formaldehyde
@@ -154,6 +145,9 @@ by using MPI parallelization (possible to run a job over several nodes). In this
 Smaller jobs can be run directly (`Run (local)`), but for larger jobs we should reserve  
 resourses via the queuing system. 
 [![ Prepare batch queue](../img/tmolex_7.png)](../img/tmolex_7.png)
+
+!!! tip
+    You can use the Desktop Clipboard to easily copy content between the notes and the Desktop environment.
 
 1. The Machine is called `puhti-login12.bullx`
 2. `User` is your CSC username, `Group name` and `Identification` are just tags you can set to distinguish different configurations
@@ -218,7 +212,7 @@ A positive curvature corresponds to a minimum, a negative to a maximum.
 In order to verify that the stationary point is a true minimum
 (positive curvature in all directions = real frequencies)
 
-Start a frequency calculation (Reuse data by just hitting "Start new job by using current data as input" )
+Start a frequency calculation (Reuse data by just hitting `Start new job with current data` )
 
 !["Start new job from previous results"](../img/local_16.png )
 
@@ -226,9 +220,10 @@ In the "Job typ" list select "Spectra & Excited States --> IR & vibrational freq
 
 Select "Run (Network)" to launch the job.
 
-Once the job finishes (you can refresh the view - wait for results to be retreived).
-You can also open a separate terminal on your Desktop (or ssh from your local pc),
-and follow the job status with slurm commands directly, e.g. with:
+From your `ProjectList`, you can select a job from a project to monitor its progress. You can refresh the view, 
+but please be patient as the data may take a moment to update.
+You can also open a separate terminal in the job’s directory (right-click on the job → Open Shell) and check the
+job status directly using Slurm commands, for example:
 
 ```bash
 squeue -u $USER # my current running or queuing jobs
